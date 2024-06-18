@@ -6,15 +6,18 @@
     <title>김예림 포트폴리오</title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link rel="stylesheet" href="./font.css">
 <link rel="stylesheet" href="./css/home.css">
 
 <!-- Latest compiled JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-<script src="./js/comm.js"></script>
+<script defer src="./js/comm.js"></script>
 </head>
 <!-- 바디시작 -->
 <body>
+    
     <div id='wrap'>
       <header>
       <nav class="nav-bg-color">
@@ -29,15 +32,35 @@
       </div>
     </nav>
     </header>
-
+    
+<!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> 
+        <div class="container">
+            <div class="intro1">Hi! I'm Yerim,</div> 
+            <div class="intro2">UX/UI DESIGNER</div>
+        </div>
+    </div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
     <!-- home시작 -->
-  <nav class="home" id="home">
+  <div class="home" id="home">
     <div class="container">
       <div class="intro1">Hi! I'm Yerim,</div> 
       <div class="intro2">UX/UI DESIGNER</div>
     </div>
    
-  </nav></div>
+  </div></div>
 
  <script>
             var square = document.getElementsByClassName('square')
@@ -95,7 +118,8 @@
                     targets: ['a'],
                 })
             })
-        </script>   
+        </script>  
+         
 </body>
 <footer>
 

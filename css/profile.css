@@ -1,0 +1,49 @@
+
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%; /* 원하는 너비로 설정 */
+    height: 1200px;
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 10vw 10vh;
+    box-sizing: border-box;
+}
+/* 사진 */
+.pic{
+    width: 35%;
+    height: auto;
+    flex:1;
+    padding:0px;
+}
+.pic img{
+    max-width:80%;
+     height: auto;
+    border-radius: 10px; /* 모서리를 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* 글 */
+.word{
+      flex: 0.7; /* 공간을 차지하는 정도를 1로 설정 */
+    padding: 10px;
+}
+
+.word h2{margin-top: 0;
+    font-size: 2em;
+    color: #ffffff;}
+
+    /* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-column,
+    .text-column {
+        width: 100%; /* 100% 너비로 설정 */
+        text-align: center;
+    }
+}
