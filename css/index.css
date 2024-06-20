@@ -14,7 +14,8 @@
   color:#ffffff;
   
 }
-/* 반응형,, */
+
+
  html,
     body {
       position: relative;
@@ -29,6 +30,10 @@
       margin: 0 auto;
       padding: 0;
     }
+    /* 마우스 커서 */
+     body{
+            cursor: url('../images/newestcursor.png') 3 3, auto; /* 커서 이미지 경로와 백업 커서 */
+        }
     /* 반응형 */
 
     @media (max-width: 1200px) {
@@ -267,6 +272,8 @@ header{
 }
 /* 글 */
 .word{
+  position: relative;
+  right:12rem;
   text-align: left;
       flex: 0.7; /* 공간을 차지하는 정도를 1로 설정 */
     padding: 10px;
@@ -290,6 +297,10 @@ header{
     }
 }
 /* slide3 포트폴리오 리스트, portfolio */
+#list-port{
+max-width:500px;
+min-width:200px;
+}
 
 .port-title{
 display: block;
@@ -300,10 +311,11 @@ display: block;
     font-weight: 600;
     color:rgba(250,250,250,1);
     position: absolute;
-    top: -10px;
-    left: 160px;}
+    top: -7px;
+    left: 30px;}
     
 .list{
+  max-width:1400px;
   display:grid;
    grid-template-columns: repeat(3, 1fr); /* 3열 */
    position:relative;
@@ -418,7 +430,7 @@ flex-direction: column;
   background-position: top;
   transition: all 5s;
 }
-.portfolio_wrap .port-img .imges-wrap .monami {
+.portfolio_wrap .port-img .imges-wrap .recl {
   background: url("../images/스팩폴리오웹.png") no-repeat 0 0;
   background-size: cover;
 }
@@ -527,6 +539,15 @@ width: 30%;
   font-size: 16px;
   font-weight: 300;
 }
+.port-texts .text-info .pf-info-pfi1 .tool img{
+      position: absolute;
+    width: 10%;
+    height: 26%;
+    top: 27px;
+    right: 130px;
+}
+
+
 .port-texts .text-info .page-info {
   position: absolute;
   top: 55%;
@@ -534,7 +555,7 @@ width: 30%;
 }
 .port-texts .text-info .page-info p {
   width: 90%;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .pfb1 {
@@ -589,15 +610,18 @@ width: 30%;
   gap: 30px;
 }
 .pfb2 .but {
-  position: relative;
-  width: 7vw;
+  background-color: rgb(244, 253, 255);
+   position: relative;
+  width: 5.5vw;
   height: 50px;
+  font-size:1rem;
   color: #000000;
-  border: 1px solid #000000;
+  border: 2px solid rgb(177, 205, 255);
+  border-radius: 8px;
 }
 .pfb2 .but:hover {
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+  box-shadow: inset 0 0 20px rgba(0, 102, 255, 0.5), 0 0 20px rgba(0, 102, 255, 0.2);
 }
 .pfb2 .but::after {
   position: absolute;
