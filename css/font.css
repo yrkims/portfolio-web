@@ -21,3 +21,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family:'GmarketSansBold';
+    src: url('./font/AnyConv.com__GmarketSansTTFBold.woff2') format('woff2');}
+@font-face {
+    font-family:'GmarketSansLight';
+    src: url('./font/AnyConv.com__GmarketSansTTFLight.woff2') format('woff2');}
+@font-face {
+    font-family:'GmarketSansMedium';
+    src: url('./font/AnyConv.com__GmarketSansTTFMedium.woff2') format('woff2');}
