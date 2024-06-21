@@ -1,32 +1,42 @@
-@font-face {
-    font-family: 'Spikle';
-    src: url('./font/Spikle.woff2') format('woff2');
-    
-    
-}
+
 @font-face {
     font-family:'Heartbreak';
     src: url('.//font/Heartbreak.woff2') format('woff2');
     
 }
+
+
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-family: 'JalnanGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'HSBombaram3_Regular';
-    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-family: 'HS-Regular';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family:'GmarketSansBold';
-    src: url('./font/AnyConv.com__GmarketSansTTFBold.woff2') format('woff2');}
+    font-family: 'MoveSans-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/MoveSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 @font-face {
-    font-family:'GmarketSansLight';
-    src: url('./font/AnyConv.com__GmarketSansTTFLight.woff2') format('woff2');}
+     font-family: 'DungGeunMo';
+     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
 @font-face {
-    font-family:'GmarketSansMedium';
-    src: url('./font/AnyConv.com__GmarketSansTTFMedium.woff2') format('woff2');}
+    font-family: 'SUITE-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}

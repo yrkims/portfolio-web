@@ -1,10 +1,7 @@
- @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 /* 전체*/
 *{
-    font-family: "Nunito Sans", sans-serif;
-    font-family:'GmarketSansMedium';
-    font-size: 1.15rem;
+    font-family: 'SUITE-Regular', sans-serif;
+    font-size: 1.4rem;
     text-decoration: none;
     list-style:none;
     
@@ -83,11 +80,13 @@ header{
     display: flex; /* Flexbox 사용 */
     align-items: center; /* 세로 가운데 정렬 */
     justify-content: space-between; /* 메뉴 항목 간격 벌리기 */
+    
   }
   .navbar-brand {
-    font-size: 1.8rem; /* 브랜드 이름 폰트 크기 */
+    font-size: 2.2rem; /* 브랜드 이름 폰트 크기 */
     color: rgba(255, 255, 255,1); /* 브랜드 이름 색상 */
     text-decoration: none; /* 밑줄 제거 */
+    font-family: 'DungGeunMo';
   }
   .menu {
     display: flex; /* Flexbox 사용 */
@@ -105,7 +104,8 @@ header{
     padding:16px;
     color: rgb(255, 255, 255); /* 링크 색상 */
     text-decoration: none; /* 밑줄 제거 */
-    font-size: 1.2rem; /* 링크 폰트 크기 */
+    font-family: 'DungGeunMo';
+    font-size: 1.8rem; /* 링크 폰트 크기 */
     
     transition: color 0.3s ease; /* 색상 변경 트랜지션 */
   }
@@ -150,7 +150,13 @@ header{
         background-color:rgb(31, 255, 49) ;
     } */
 
-    /* 기본 스타일 - 다이아몬드 모양 */
+    /* 페이지네이션 스타일 */
+    .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin:1rem 0;
+    }
+    .swiper-pagination-bullet-active{
+  border-radius:0px;
+}
 .swiper-pagination-bullet {
   display:inline-block;
   width: 10px;
@@ -164,10 +170,11 @@ header{
 /* 활성화된 스타일 */
 .swiper-pagination-bullet-active {
   background-color: #cc83fd; /* 활성화된 bullet 색상 */
-  transform: rotate(45deg) scale(1.5); /* 크기 증가 및 회전 유지 */
+  transform: rotate(45deg) scale(1.5); /* 크기 증가 */
   box-shadow: 0 0 10px 5px rgba(167 108 173 / 50%); /* 빛나는 효과 */
   opacity: 1;
 }
+
 /* home홈 */
 #home .container{
     padding: 15% 15%;
@@ -179,7 +186,7 @@ header{
     transition: transform 1s ease, opacity 1s ease;
     text-align:center;
     display:flex;
-    font-family: "Libre Baskerville", serif;
+    font-family: 'DungGeunMo';
     font-weight: 600;
     font-style: normal;
     
@@ -242,21 +249,21 @@ header{
     width: 85%; /* 원하는 너비로 설정 */
     height: 1200px;
     margin: 0 auto; /* 가운데 정렬 */
-    padding: 10vw 10vh;
+    padding: 10vw 15vh;
     box-sizing: border-box;
 }
-/* 타이틀 */
+/* 프로필타이틀 */
 .profile .title{
     display: block;
     position: relative;
     width: auto;
     margin-bottom: 20px;
-    font-size:1.7rem;
+    font-size:2rem;
     font-weight: 700;
     color:rgba(250,250,250,1);
     
 }
-/* 사진 */
+/* 프로필사진 */
 .pic{
     width: 35%;
     height: auto;
@@ -265,24 +272,75 @@ header{
     text-align: left;
 }
 .pic img{
-    max-width:50%;
+    padding: 3% 0;
+    max-width: 80%;
     height: 30%;
-    border-radius: 10px; /* 모서리를 둥글게 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-/* 글 */
-.word{
-  position: relative;
-  right:12rem;
-  text-align: left;
-      flex: 0.7; /* 공간을 차지하는 정도를 1로 설정 */
-    padding: 10px;
+    border-radius: 40px;
 }
 
-.word h2{margin-top: 0;
-    font-size: 1.5em;
-    color:rgb(255, 255, 255);}
+/* 개인인포 info */
+.profile-left-info{
+  position:absolute;
+  top:80%;
+
+}
+.profile-left-info .profile-left-bottom{
+  margin:0;
+  padding:14px 0 0 0;
+}
+.profile-left-info .profile-left-bottom li{
+  padding-bottom:8px;
+  font-size: 20px;
+  font-family: 'SUITE-Regular';
+}
+
+/* 프로필 중간&오른쪽 글 */
+.profile .word{
+    display: flex;
+    position: relative;
+    top: 104px;
+    right: 0;
+    text-align: left;
+    flex: 2;
+    padding: 0 0 0 1.45rem;
     
+}
+
+.profile .word h4{
+  padding-bottom:7%;
+  margin:0;
+    font-size: 1.2em;
+    color:rgb(255, 255, 255);
+  }
+  
+  .profile .word .right2{
+    padding-left:40px;
+  }
+  .profile .word .right2 .miner{
+    padding-left: 6.4rem;
+  }
+
+  
+  .profile .word .profile-depth2{
+    padding: 0 0 10% 0 ;
+  }
+
+   .profile .word .profile-depth2 li{
+    padding-bottom:2px;
+
+   }
+
+   .profile .word .profile-depth2 .name{
+    font-family: 'SUITE-Regular';
+   }
+   .profile .word .profile-depth2 .date{
+    opacity:0.7;
+    font-size: 0.9rem;
+    font-family: 'SUITE-Regular';
+   }
+
+   
+
 
     /* 반응형 디자인 */
 @media (max-width: 768px) {
@@ -307,7 +365,7 @@ display: block;
     
     width: auto;
     margin:0;
-    font-size:1.6rem;
+    font-size:2rem;
     font-weight: 600;
     color:rgba(250,250,250,1);
     position: absolute;
@@ -330,10 +388,11 @@ display: block;
    column-count: 3;
 }
 
-#list-port{
+/* #list-port였ㅇ던것 */
+.port{
     display: flex;
     width: 20rem; /* 고정 너비 */
-  height: 16rem; /* 고정 높이 */
+  height: 16.5rem; /* 고정 높이 */
     padding:0;
     margin:10px;
     border-radius: 8px;
@@ -341,7 +400,7 @@ display: block;
     background: rgba(253, 253, 253,1);
 flex-direction: column;
 
-}
+}/* 여기까지 */
 
 .list .box{
     display:flex;
@@ -369,7 +428,7 @@ flex-direction: column;
 
 
 .description {
-  padding: 0px 20px;
+  padding: 0px 15px;
   box-sizing: border-box;
   text-align: left;
   letter-spacing: -0.07rem;
@@ -490,6 +549,10 @@ flex-direction: column;
     left: 0;
 } 
 
+.pf-text-pft1 .type{
+  font-size:1rem;
+}
+
 .text-head .pf-logo-pfl1 img{
 width: 30%;
 }
@@ -543,8 +606,8 @@ width: 30%;
       position: absolute;
     width: 10%;
     height: 26%;
-    top: 27px;
-    right: 130px;
+    top: 35px;
+    right: 115px;
 }
 
 
