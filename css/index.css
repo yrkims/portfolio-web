@@ -29,7 +29,7 @@
     }
     /* 마우스 커서 */
      body{
-            cursor: url('../images/newestcursor.png') 3 3, auto; /* 커서 이미지 경로와 백업 커서 */
+            cursor: url('../images/highlight-cursor-L.png') 3 3, auto; /* 커서 이미지 경로와 백업 커서 */
         }
     /* 반응형 */
 
