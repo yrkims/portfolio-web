@@ -168,6 +168,8 @@ header{
 
   }
  
+
+
   .intro1, .intro2{
     opacity:0;
     transition: transform 1s ease, opacity 1s ease;
@@ -1497,6 +1499,7 @@ width: 60%;
 
 
 /* 마지막 슬라이드, slide9 */
+
 .text-9{
   display:flex;
   flex-direction: column;
