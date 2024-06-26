@@ -86,7 +86,7 @@ header{
     font-size: 2.2rem; /* 브랜드 이름 폰트 크기 */
     color: rgba(255, 255, 255,1); /* 브랜드 이름 색상 */
     text-decoration: none; /* 밑줄 제거 */
-    font-family: 'EF_jejudoldam';
+    font-family: 'Cafe24Decobox';
   }
   .menu {
     display: flex; /* Flexbox 사용 */
@@ -104,7 +104,7 @@ header{
     padding:16px;
     color: rgb(255, 255, 255); /* 링크 색상 */
     text-decoration: none; /* 밑줄 제거 */
-    font-family: 'EF_jejudoldam';
+    font-family: 'Cafe24Decobox';
     font-size: 1.8rem; /* 링크 폰트 크기 */
     
     transition: color 0.3s ease; /* 색상 변경 트랜지션 */
@@ -175,7 +175,7 @@ header{
     transition: transform 1s ease, opacity 1s ease;
     text-align:center;
     display:flex;
-    font-family: 'EF_jejudoldam';
+    font-family: 'Cafe24Decobox';
     font-weight: 600;
     font-style: normal;
     
@@ -192,7 +192,7 @@ header{
   }
 
   .intro2{
-    padding-top:5vh;
+    padding-top:4vh;
     position:relative;
     /* font-style: italic; */
     font-size:5.5rem;
@@ -265,6 +265,7 @@ header{
     padding: 3% 0;
     max-width: 80%;
     height: 30%;
+    
     border-radius: 40px;
 }
 
@@ -363,8 +364,8 @@ display: block;
     font-weight: 600;
     color:rgba(250,250,250,1);
     position: absolute;
-    top: -100px;
-    left: 10px;}
+    top: 250px;
+    left: 290px;}
  
 
 .port-title .span{
@@ -1508,7 +1509,7 @@ width: 60%;
     top: 40vh;
 }
 .text-9 .main{
-font-family: 'EF_jejudoldam';
+font-family: 'Cafe24Decobox';
   font-size:5rem;
 }
 
